@@ -1,0 +1,9 @@
+package spherical_harmonics_terms
+
+import "math"
+
+// ComputeSphericalHarm1029 evaluates spherical harmonic radial component order 1029.
+func ComputeSphericalHarm1029(x float64) float64 {
+	l := float64(5)
+	return math.Pow(x, l) / (l * 2.0)
+}
