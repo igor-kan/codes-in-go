@@ -1,0 +1,9 @@
+package spherical_harmonics_terms
+
+import "math"
+
+// ComputeSphericalHarm5074 evaluates spherical harmonic radial component order 5074.
+func ComputeSphericalHarm5074(x float64) float64 {
+	l := float64(5)
+	return math.Pow(x, l) / (l * 2.0)
+}
